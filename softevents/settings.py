@@ -131,6 +131,3 @@ MEDIA_URL = '/media/' #THIS IS TO SET WHERE IMAGE FILE WILL BE LOCATED
 
 
 
-
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
