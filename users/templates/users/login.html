@@ -1,0 +1,44 @@
+			{% extends "events/base.html" %}
+			{% load crispy_forms_tags %}
+			{% block content %}
+
+
+				
+			            
+			            	<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"></div>
+			                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			             <form action="" method="POST" class="w3-black">
+			                {%csrf_token%}
+			                <fieldset class="form-group hero-text">
+			                    <legend class="text-center hero-title">Log In</legend>
+			                    {{form|crispy}}
+			                </fieldset>
+
+			                <div class="form-group text-center">
+			                    <button class="btn btn-primary  text-center w3-margin " type="submit">Log In</button><br>
+			                    <a class="w3-margin hero-text" href="#">Forgot password? </a>
+			                </div>
+
+			                <div class="border-top pt-3 text-center">
+			                <small class="hero-text">
+			                    Need An Account? <a class="ml-2 hero-text " href="{% url 'register' %}">Sign Up Now</a>
+			                </small>
+
+			                <br><br>
+			            </div>
+			            </form>
+
+			          
+
+
+			                     </div>
+			                      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"></div>
+			            </div>
+			        </div>
+			    </div>
+
+
+
+
+			    
+			{% endblock content %}

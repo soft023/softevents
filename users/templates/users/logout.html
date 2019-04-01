@@ -1,0 +1,27 @@
+    {% extends "events/base.html" %}
+          {% load crispy_forms_tags %}
+          {% block content %}
+
+
+      <div class="col-lg-12 text-center">
+                    <h2 class="w3-text-red hero-title">
+                     You have been Logged Out
+                    </h2>
+                </div>
+               <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                   
+                    <div class="border-top pt-3 hero-text ">
+                        <small class="hero-text">
+                            Already Have An Account? <a class="ml-2" href="{% url 'login' %}"><span class="w3-text-green">Sign In</span></a>
+                        </small>
+                    </div>
+                   
+                 </div>
+                  <div class="col-md-3"></div>
+                </div>
+
+
+                    
+        {% endblock content %}
