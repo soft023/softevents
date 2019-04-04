@@ -22,3 +22,12 @@ def register(request):
 	else:
 		form = UserRegistrationForm()
 	return render(request,'users/register.html',{'form': form})
+
+
+
+
+
+def aboutus(request):
+
+
+	return render(request, 'users/aboutus.html')
