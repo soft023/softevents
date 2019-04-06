@@ -131,3 +131,6 @@ MEDIA_URL = '/media/' #THIS IS TO SET WHERE IMAGE FILE WILL BE LOCATED
 
 
 
+LOGIN_REDIRECT_URL = 'events-home'
+
+LOGIN_URL = 'login'

@@ -48,7 +48,7 @@
                                         </ul>
                                     </li>
                                        {% if user.is_authenticated%}
-                                        <li><a href="contact.html" title="About Us">My Profile</a> </li>
+                                        <li><a href="{% url 'profile'%}" title="About Us">My Profile</a> </li>
                                           <li><a href="{% url 'logout'%}" title="About Us">Log Out</a> </li>
                                             {% else %}
                                     <li> <a href="{% url 'login'%}" title="Sign in">Log in</a></li>

@@ -1,0 +1,62 @@
+
+        {% extends "events/base.html" %}
+        {% load crispy_forms_tags %}
+        {% block content %}
+        <div class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <h1 class="hero-title">{{user.username}}, Personal Profile</h1>
+                    <p class="hero-text"><strong>check it, like it,attend it</strong> </p>
+                    </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+        <div class="w3-card" style="width:100%">
+        <img src="{{user.profilepics.image.url}}" class="w3-image" alt="Profile picture" style="width:100%">
+        <div class="w3-container w3-white">
+          <h4><b>{{user.username}}</b></h4>
+          <p>The boss of all bosses</p>
+        </div>
+      </div>
+
+
+
+
+
+                   
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"></div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    
+                     <form action="" method="POST" enctype="multipart/form-data" class="w3-black">
+                        {%csrf_token%}
+                        <fieldset class="form-group">
+                            <legend class="text-center">Profile Info</legend>
+                            {{u_form|crispy}}
+                            {{p_form|crispy}}
+                        </fieldset>
+
+                        <div class="form-group text-center">
+                            <button class="btn btn-outline-info  text-center w3-text-black" type="submit">Update</button>
+
+                        </div>
+                         <br>
+                    </form>
+
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+       
+
+      
+
+
+
+     {% endblock content %}
