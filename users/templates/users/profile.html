@@ -2,10 +2,10 @@
         {% extends "events/base.html" %}
         {% load crispy_forms_tags %}
         {% block content %}
-        <div class="hero-section">
+        <div class="">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 w3-animate-right">
                     <h1 class="hero-title">{{user.username}}, Personal Profile</h1>
                     <p class="hero-text"><strong>check it, like it,attend it</strong> </p>
                     </div>
@@ -50,6 +50,37 @@
 
                 </div>
             </div>
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 text-center w3-white">
+        <h2>Up Coming Booked Events</h2>
+<ul class="w3-ul w3-card-4 " style="width:100%">
+  <h5><li><a href="#" >Night of a thousand Laugh</a></li></h5>
+ <h5> <li><a href="#">How to be come a millionaire</a></li></h5>
+<h5> <li><a href="#">Secret of Crypto Currency</a></li></h5>
+</ul>
+
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 text-center w3-white">
+        <h2>Past Event Booked</h2>
+<ul class="w3-ul w3-card-4" style="width:100%">
+  <h5><li><a href="#">Night of a thousand Laugh</a></li></h5>
+ <h5> <li><a href="#">How to be come a millionaire</a></li></h5>
+<h5> <li><a href="#">Secret of Crypto Currency</a></li></h5>
+</ul>
+
+    </div>
+</div>
+
+
+
+
+
+
         </div>
         </div>
 
