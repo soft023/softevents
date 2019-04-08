@@ -8,3 +8,10 @@ def home(request):
 
 
 	return render(request, 'events/home.html')
+
+
+def details(request):
+
+
+	return render(request, 'events/events_details.html')
+
