@@ -15,3 +15,12 @@ def details(request):
 
 	return render(request, 'events/events_details.html')
 
+
+def list(request):
+
+
+	return render(request, 'events/event_list.html')
+
+
+
+
